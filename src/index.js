@@ -237,7 +237,7 @@ function updateDisplay(boardName, board) {
         });
     });
     getMissedAttacksArray.forEach((attack) => {
-        let selectedCell = document..querySelector(
+        let selectedCell = document.querySelector(
             `.${boardName} [data-x="${attack.x}"][data-y ="${attack.y}"]`
         );
         selectedCell.textContent = "X";
